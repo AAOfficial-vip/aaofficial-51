@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sultan Salahuddin Ayyubi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    /* 🔹 Header */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #111;
+      border-bottom: 2px solid #222;
+    }
+
+    .logo {
+      height: 60px;
+      width: 60px;
+      flex-shrink: 0;
+    }
+
+    /* 🔹 Navigation */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    #google_translate_element {
+      min-width: 100px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* 🔹 Subscribe Button */
+    .subscribe-btn {
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      white-space: nowrap;
+    }
+
+    .subscribe-btn:hover {
+      background-color: #cc0000;
+      color: #fff;
+    }
+
+    /* 🔹 Main Content Layout */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    article {
+      background: rgba(255,255,255,0.05);
+      padding: 15px;
+      border-radius: 8px;
+      line-height: 1.6;
+    }
+
+    h2, h3 {
+      margin-top: 0;
+    }
+
+    /* 🔹 Responsive Video */
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .video-wrapper iframe,
+    .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* 🔹 Responsive Design */
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        justify-content: center;
+      }
+      nav a {
+        font-size: 12px;
+      }
+      .logo {
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a, .subscribe-btn {
+        font-size: 12px;
+      }
+    }
+  </style>
+
+  <!-- 🌐 گوگل ترجمہ -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'ur,en,tr,hi,bn,pa',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+<!-- 🔝 Header -->
+<header>
+  <img src="awais1.png" alt="AA Official Logo" class="logo" />
+   <nav id="mainNav">
+  <a href="index.html">Home</a>
+  <a href="#about">About Us</a>
+  <a href="orhan.html">Yükselişe: Orhan Gazi</a>
+  <a href="salahuddin.html">Sultan Salahuddin Ayyubi</a>
+  <a href="mehmed.html">Sultan Muhammad Fatih</a>
+  <a href="help.html">Help</a>
+  <a href="#subscribe" class="subscribe-btn">Subscribe</a>
+  <div id="google_translate_element"></div>
+</nav>
+
+</header>
+
+<!-- 🔹 Main Content -->
+<div class="container">
+  <!-- آرٹیکل -->
+  <article>
+    <h2>Sultan Salahuddin Ayyubi</h2>
+    <p>یہاں آپ کا آرٹیکل ہوگا...</p>
+  </article>
+
+  <!-- ویڈیو 1 -->
+  <article>
+    <h3>ویڈیو سیکشن 1</h3>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+  </article>
+
+  <!-- ویڈیو 2 -->
+  <article>
+    <h3>ویڈیو سیکشن 2</h3>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+  </article>
+</div>
+
+</body>
+</html>

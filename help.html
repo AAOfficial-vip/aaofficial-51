@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ موبائل اسکیل -->
+  <title>Help & Support</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* ===== Header ===== */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #111;
+      border-bottom: 2px solid #222;
+    }
+
+    .logo {
+      height: 60px;
+      width: auto;
+      max-width: 100%;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      padding: 6px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    #google_translate_element {
+      margin-left: 10px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Subscribe Button ===== */
+    .subscribe-btn {
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .subscribe-btn:hover {
+      background-color: #cc0000;
+    }
+
+    /* ===== Help Section ===== */
+    .help-section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .help-section h2 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .help-section p {
+      font-size: 1rem;
+      word-wrap: break-word;
+    }
+
+    /* ===== Responsive Adjustments ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+      nav a, .subscribe-btn {
+        width: 100%;
+        text-align: center;
+      }
+      .logo {
+        height: 50px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+      .help-section {
+        padding: 15px;
+      }
+    }
+  </style>
+
+  <!-- 🌐 Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'ur,en,tr,hi,bn,pa',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+<!-- 🔝 Header -->
+<header>
+  <img src="awais1.png" alt="AA Official Logo" class="logo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#about">About Us</a>
+    <a href="orhan.html">Yükselişe: Orhan Gazi</a>
+    <a href="salahuddin.html">Sultan Salahuddin Ayyubi</a>
+    <a href="mehmed.html">Sultan Muhammad Fatih</a>
+    <a href="help.html">Help</a>
+    <a href="#subscribe" class="subscribe-btn">Subscribe</a>
+    <div id="google_translate_element"></div>
+  </nav>
+</header>
+
+<!-- Help Section -->
+<div class="help-section">
+  <h2>🆘 Help & Support</h2>
+  <p>
+    Welcome to the Help Section of AA Official. <br><br>
+    If you're facing any issues while watching videos, using search, or navigating through the content,
+    please check your internet connection and browser compatibility first.
+    <br><br>
+    For subtitles, language settings, and download options, make sure you're using the latest version of your browser.
+    <br><br>
+    For more detailed help or to report a bug, please contact us at: <br>
+    <strong>support@aaofficial.com</strong>
+  </p>
+</div>
+
+</body>
+</html>
